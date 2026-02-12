@@ -3,69 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Rodrigo Gatica</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="styles.css">
-    
     <style>
-        /* ESTO ES LO QUE SOLUCIONA TU PROBLEMA */
+        /* FONDO LUCES ROJAS */
         body.index3 {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                         url('imagen1.jpeg') no-repeat center center fixed !important;
             background-size: cover !important;
-            min-height: 100vh;
+            color: white;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
+            min-height: 100vh;
+        }
+
+        /* TÍTULOS AL CENTRO */
+        h1, h2 { text-align: center !important; width: 100%; margin-top: 20px; }
+
+        /* MENÚ A LA DERECHA */
+        .main-nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            gap: 20px;
+        }
+        .main-nav a { color: white; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+
+        /* CONTENEDOR PRINCIPAL */
+        main { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+        /* FORMULARIO */
+        .contact-form {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #8b0000;
+            margin-bottom: 40px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background: #222;
             color: white;
         }
-
-        /* Mantenemos el menú a la derecha y títulos al centro en esta página también */
-        h1, h2 {
-            text-align: center !important;
-            width: 100% !important;
-            display: block !important;
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #8b0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
         }
+        button:hover { background: #ff0000; }
 
-        .main-nav {
-            display: flex !important;
-            justify-content: flex-end !important;
-            gap: 20px !important;
-            padding: 20px !important;
+        /* SECCIÓN REDES SOCIALES */
+        .redes {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 25px;
+            border-radius: 15px;
         }
-
-        /* Iconos de redes sociales siempre a 24px */
+        .redes ul { list-style: none; padding: 0; }
+        .redes li { 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+        /* EL DICHOSO TAMAÑO DE ICONOS */
         .redes img {
             width: 24px !important;
             height: 24px !important;
             object-fit: contain !important;
-            vertical-align: middle;
         }
-
-        .redes li {
-            display: flex !important;
-            align-items: center !important;
-            margin-bottom: 10px;
+        .redes a { 
+            color: #e5e5e5; 
+            text-decoration: none; 
+            font-size: 1.1rem;
+            transition: 0.3s;
         }
+        .redes a:hover { color: #8b0000; }
     </style>
 </head>
+<body class="index3">
 
-<body class="index3"> 
     <nav class="main-nav">
         <a href="index.html">Inicio</a>
         <a href="index2.html">Historia</a>
     </nav>
 
-    <header>
-        <h1>Contacto</h1>
-        <h2>Enviame un mensaje</h2>
-    </header>
+    <h1>Contacto</h1>
+    <h2>Hablemos de música</h2>
 
     <main>
-        
-        
-<nav class="main-nav">
-    <a href="index.html">Volver al inicio</a>
-</nav>
+        <section class="contact-form">
+            <form action="https://formsubmit.co/aa0abb814ae1df5308291f25ffee0303" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://eclectic-melba-f07fde.netlify.app/index3.html">
+                
+                <input type="text" name="name" placeholder="Tu nombre completo" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="message" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                <button type="submit">ENVIAR MENSAJE</button>
+            </form>
+        </section>
+
+        <section class="redes">
+            <ul>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+                    <a href="https://www.youtube.com/@gat30" target="_blank">YouTube</a>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+                    <a href="https://www.instagram.com/p/DEvrUvhPXlQ/?hl=es&img_index=1" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook">
+                    <a href="https://www.facebook.com/rodrigo.gatica.399" target="_blank">Facebook Personal</a>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook Page">
+                    <a href="https://www.facebook.com/rodrigo322gatica" target="_blank">Página de Facebook</a>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 40px; font-size: 0.8rem; opacity: 0.7;">
+        <p>© 2026 . Rodrigo Gatica Abraham . Vocalista</p>
+    </footer>
 
 </body>
 </html>
+
 
 
